@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import Hero from "./sections/Hero/Hero";
+import Hero from "@/sections/Hero/Hero";
+import About from "@/sections/About/About";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
       <main className="flex-1">
         <Hero />
+        <About />
       </main>
 
       <Footer />
