@@ -1,97 +1,96 @@
 import { motion } from "framer-motion";
-import { SiReact, SiTypescript, SiNextdotjs } from "react-icons/si";
+import type { MotionValue } from "framer-motion";
+import { SiGithub } from "react-icons/si";
+import { SlSocialLinkedin } from "react-icons/sl";
+import { TiSocialLinkedin } from "react-icons/ti";
 
-export default function Hero() {
+interface HeroProps {
+  contentX?: MotionValue<number>;
+  headingSize?: MotionValue<string>;
+  roleSize?: MotionValue<string>;
+  descriptionOpacity?: MotionValue<number>;
+  headingOpacity?: MotionValue<number>;
+  headingY?: MotionValue<number>;
+  roleOpacity?: MotionValue<number>;
+  roleY?: MotionValue<number>;
+  snsOpacity?: MotionValue<number>;
+}
+
+export default function Hero({
+  contentX,
+  headingSize,
+  roleSize,
+  descriptionOpacity,
+  headingOpacity,
+  headingY,
+  roleOpacity,
+  roleY,
+  snsOpacity,
+}: HeroProps) {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[var(--bg)]">
-      {/* Background Grid */}
-      <div
-        className="absolute inset-0 opacity-70"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, var(--grid) 1px, transparent 1px),
-            linear-gradient(to bottom, var(--grid) 1px, transparent 1px)
-          `,
-          backgroundSize: "80px 80px",
-        }}
-      />
-
-      {/* Blue Glow */}
-      <motion.div
-        className="absolute left-1/2 top-1/2 h-[550px] w-[550px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky-500/25 blur-[100px]"
-        animate={{
-          scale: [1, 1.08, 1],
-          x: ["-50%", "-47%", "-50%"],
-          y: ["-50%", "-53%", "-50%"],
-        }}
-        transition={{
-          duration: 10,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
-      {/* Secondary Glow */}
-      <motion.div
-        className="absolute left-[58%] top-[42%] h-[300px] w-[300px] rounded-full bg-blue-400/20 blur-[90px]"
-        animate={{
-          x: [0, 30, -15, 0],
-          y: [0, -20, 15, 0],
-          scale: [1, 1.05, 0.98, 1],
-        }}
-        transition={{
-          duration: 14,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-      />
-
+    <section className="relative flex h-full items-center justify-center overflow-hidden">
       {/* Hero Content */}
-      <div className="relative z-10 mx-auto flex max-w-[var(--content-width)] flex-col items-center px-6 text-center gap-5">
-        {/* Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className="text-5xl font-bold tracking-[0.1em] text-[var(--text-h)] sm:text-6xl md:text-7xl"
-        >
-          I'm{" "}
-          <span className="bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
-            YUJEONG
-          </span>
-        </motion.h1>
-
-        {/* Role */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-12 text-2xl font-medium text-[var(--text-strong)] sm:text-xl"
-        >
-          Software Engineer | Frontend-focused
-        </motion.p>
-
-        {/* Description */}
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-          className="mt-6 max-w-2xl text-base text-[var(--text-muted)] sm:text-md"
-        >
-          I build user-focused web products with React and TypeScript, combining
-          hands-on development with technical ownership.
-        </motion.p>
-
-        {/* Tech Stacks */}
+      <div className="relative z-10 w-full px-6">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="mt-2 flex items-center gap-8"
+          style={contentX ? { x: contentX } : undefined}
+          className="mx-auto flex max-w-[var(--content-width)] flex-col items-center gap-5 text-center"
         >
-          <SiReact className="h-5 w-5 text-[#61DAFB]" />
-          <SiTypescript className="h-5 w-5 text-[#3178C6]" />
-          <SiNextdotjs className="h-5 w-5 text-black dark:text-white" />
+          {/* Heading */}
+          <motion.h1
+            style={{
+              fontSize: headingSize,
+              opacity: headingOpacity,
+              y: headingY,
+            }}
+            initial={{ y: 24 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-5xl font-bold tracking-[0.1em] text-[var(--text-h)]"
+          >
+            I'm{" "}
+            <span className="bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
+              YUJEONG
+            </span>
+          </motion.h1>
+
+          {/* Role */}
+          <motion.p
+            style={{
+              fontSize: roleSize,
+              opacity: roleOpacity,
+              y: roleY,
+            }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="mt-12 text-2xl font-medium text-[var(--text-strong)]"
+          >
+            Software Engineer | Frontend-focused
+          </motion.p>
+
+          {/* Description */}
+          <motion.p
+            style={{ opacity: descriptionOpacity }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="mt-6 max-w-2xl text-base text-[var(--text-muted)] sm:text-md"
+          >
+            I build user-focused web products with React and TypeScript,
+            combining hands-on development with technical ownership.
+          </motion.p>
+
+          {/* Social */}
+          <motion.div
+            style={{ opacity: snsOpacity }}
+            initial={{ y: 20 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.7, delay: 0.4 }}
+            className="mt-2 flex items-center gap-8"
+          >
+            <SiGithub className="h-7 w-7 text-[#181717] transition-transform duration-200 hover:scale-110" />
+            <TiSocialLinkedin className="h-7 w-7 text-[#0A66C2] transition-transform duration-200 hover:scale-110" />
+          </motion.div>
         </motion.div>
       </div>
     </section>
