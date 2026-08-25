@@ -45,8 +45,9 @@
        Text
        ---------------------------------------- */
 
-  --text: #4b5563;
-  --text-h: #111827;
+  --text: #596273;
+  --text-strong: #4b5563;
+  --text-h: #1f2937;
   --text-muted: #6b7280;
   --text-subtle: #9ca3af;
   --text-inverse: #ffffff;
@@ -255,6 +256,7 @@ h4 {
   :root {
     --text: #a1a1aa;
     --text-h: #f4f4f5;
+    --text-strong: #c4c4cc;
     --text-muted: #a1a1aa;
     --text-subtle: #71717a;
     --text-inverse: #111827;
