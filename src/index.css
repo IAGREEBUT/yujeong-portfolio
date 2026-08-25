@@ -1,111 +1,304 @@
+@import "tailwindcss";
+
+/* ========================================
+   Font
+   ======================================== */
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("./assets/fonts/Paperlogy-4Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("./assets/fonts/Paperlogy-5Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("./assets/fonts/Paperlogy-6SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Paperlogy";
+  src: url("./assets/fonts/Paperlogy-7Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========================================
+     Design Tokens
+     ======================================== */
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* ----------------------------------------
+       Text
+       ---------------------------------------- */
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --text: #4b5563;
+  --text-h: #111827;
+  --text-muted: #6b7280;
+  --text-subtle: #9ca3af;
+  --text-inverse: #ffffff;
 
-  font: 18px/145% var(--sans);
+  /* ----------------------------------------
+       Background
+       ---------------------------------------- */
+
+  --bg: #ffffff;
+  --bg-subtle: #f8fbff;
+  --bg-muted: #f8fafc;
+  --bg-accent: #eff6ff;
+
+  /* ----------------------------------------
+       Border
+       ---------------------------------------- */
+
+  --border: #e5e7eb;
+  --border-subtle: #f1f5f9;
+  --border-accent: #bfdbfe;
+
+  /* ----------------------------------------
+       Accent
+       ---------------------------------------- */
+
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-active: #1e40af;
+
+  --accent-bg: #eff6ff;
+  --accent-bg-hover: #dbeafe;
+  --accent-border: #bfdbfe;
+
+  /* ----------------------------------------
+       Decorative
+       ---------------------------------------- */
+
+  --grid: #f1f5f9;
+  --glow: rgba(37, 99, 235, 0.12);
+
+  /* ----------------------------------------
+       Code / Tags
+       ---------------------------------------- */
+
+  --code-bg: #f3f4f6;
+  --tag-bg: #eff6ff;
+  --tag-text: #2563eb;
+
+  /* ----------------------------------------
+       Surface
+       ---------------------------------------- */
+
+  --social-bg: #f8fafc;
+
+  /* ----------------------------------------
+       Shadow
+       ---------------------------------------- */
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+
+  --shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+
+  --shadow-lg: 0 20px 50px -15px rgba(15, 23, 42, 0.12);
+
+  --shadow-accent: 0 8px 24px rgba(37, 99, 235, 0.18);
+
+  /* ----------------------------------------
+       Typography
+       ---------------------------------------- */
+
+  --sans: "Paperlogy", system-ui, sans-serif;
+  --heading: "Paperlogy", system-ui, sans-serif;
+
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* ----------------------------------------
+       Layout
+       ---------------------------------------- */
+
+  --container: 1200px;
+  --content-width: 1120px;
+
+  /* ----------------------------------------
+       Radius
+       ---------------------------------------- */
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ----------------------------------------
+       Transition
+       ---------------------------------------- */
+
+  --transition-fast: 150ms ease;
+  --transition: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* ----------------------------------------
+       Root
+       ---------------------------------------- */
+
+  font-family: var(--sans);
+  font-size: 18px;
+  line-height: 1.45;
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+
   color: var(--text);
   background: var(--bg);
+
+  color-scheme: light;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+/* ========================================
+     Reset / Base
+     ======================================== */
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-family: var(--sans);
+
+  color: var(--text);
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }
 
 h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
+h2,
+h3,
+h4,
 p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading);
   color: var(--text-h);
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+/* ========================================
+     Responsive
+     ======================================== */
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
 }
+
+/* ========================================
+     Dark Mode — Not Active Yet
+     ======================================== */
+
+/*
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #a1a1aa;
+      --text-h: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --text-subtle: #71717a;
+      --text-inverse: #111827;
+  
+      --bg: #09090b;
+      --bg-subtle: #0f172a;
+      --bg-muted: #18181b;
+      --bg-accent: #172554;
+  
+      --border: #27272a;
+      --border-subtle: #1f2937;
+      --border-accent: #1e40af;
+  
+      --accent: #60a5fa;
+      --accent-hover: #93c5fd;
+      --accent-active: #3b82f6;
+  
+      --accent-bg: rgba(37, 99, 235, 0.12);
+      --accent-bg-hover: rgba(37, 99, 235, 0.2);
+      --accent-border: rgba(96, 165, 250, 0.35);
+  
+      --grid: #18181b;
+      --glow: rgba(59, 130, 246, 0.14);
+  
+      --code-bg: #18181b;
+      --tag-bg: rgba(37, 99, 235, 0.12);
+      --tag-text: #60a5fa;
+  
+      --social-bg: #18181b;
+  
+      --shadow-sm:
+        0 1px 2px rgba(0, 0, 0, 0.25);
+  
+      --shadow:
+        0 10px 30px -10px rgba(0, 0, 0, 0.4);
+  
+      --shadow-lg:
+        0 20px 50px -15px rgba(0, 0, 0, 0.5);
+  
+      --shadow-accent:
+        0 8px 24px rgba(37, 99, 235, 0.2);
+  
+      color-scheme: dark;
+    }
+  }
+  */
