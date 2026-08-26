@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import Intro from "@/sections/Intro/Intro";
 import TeckStack from "./sections/TeckStack/TeckStack";
 import "./App.css";
+import Experience from "./sections/Experience/Experience";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main className="flex-1">
         <Intro />
         <TeckStack />
+        <Experience />
       </main>
 
       <Footer />
