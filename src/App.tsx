@@ -1,6 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Intro from "@/sections/Intro/Intro";
+import TeckStack from "./sections/TeckStack/TeckStack";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
       <main className="flex-1">
         <Intro />
+        <TeckStack />
       </main>
 
       <Footer />
