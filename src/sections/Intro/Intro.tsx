@@ -72,7 +72,7 @@ export default function Intro() {
   return (
     <section ref={introRef} className="relative">
       {/* Scroll Space */}
-      <div className="relative min-h-[400vh]">
+      <div className="relative min-h-[350vh]">
         {/* Viewport */}
         <div className="sticky top-0 h-screen overflow-hidden">
           {/* Shared Background */}
