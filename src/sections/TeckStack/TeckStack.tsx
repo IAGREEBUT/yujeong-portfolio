@@ -44,6 +44,7 @@ export default function TeckStack() {
           className="pb-2 text-sm font-medium tracking-[0.3em] text-[var(--accent)]"
         >
           TECH STACK
+          <div className="mx-auto mt-5 h-px w-14 bg-[var(--accent)]" />
         </motion.p>
 
         {/* Frontend */}
