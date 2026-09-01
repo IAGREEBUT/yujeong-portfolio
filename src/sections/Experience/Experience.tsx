@@ -1,11 +1,13 @@
 import { motion } from "framer-motion";
+import ewhaLab from "@/assets/images/logos/ewha_lab.png";
+import mireaAsset from "@/assets/images/logos/mirae_asset_securities_sg_logo.jpeg";
 
 const experiences = [
   {
     period: "Jan 2023 – Apr 2026",
     company: "Mirae Asset Securities",
     role: "Mobile Development Team",
-    logo: "",
+    logo: mireaAsset,
     description: null,
     date: null,
     positions: [
@@ -27,7 +29,7 @@ const experiences = [
     period: "Jul 2020 – Aug 2020",
     company: "Data WareHousing Lab (Ewha Univ)",
     role: "Research Intern",
-    logo: "",
+    logo: ewhaLab,
     description:
       "- Developed a CNN-based model to classify human activity patterns from 3-axis accelerometer data",
     date: null,
@@ -37,7 +39,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="relative w-full px-6 py-24">
+    <section id="experience" className="relative w-full px-6 py-24">
       <div className="mx-auto max-w-[var(--content-width)]">
         {/* Section Header */}
         <motion.div
@@ -93,9 +95,19 @@ export default function Experience() {
 
                   {/* Company Content */}
                   <div className="flex gap-6 md:pl-2">
-                    {/* Temporary Logo */}
-                    <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-xs text-[var(--text-muted)]">
-                      LOGO
+                    {/* Company Logo */}
+                    <div className="flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface)]">
+                      {experience.logo ? (
+                        <img
+                          src={experience.logo}
+                          alt={`${experience.company} logo`}
+                          className="h-full w-full object-contain p-4"
+                        />
+                      ) : (
+                        <span className="text-xs text-[var(--text-muted)]">
+                          LOGO
+                        </span>
+                      )}
                     </div>
 
                     <div className="min-w-0 flex-1 pt-1">
