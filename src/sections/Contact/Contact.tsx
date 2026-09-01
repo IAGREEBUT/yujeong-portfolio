@@ -101,7 +101,7 @@ export default function Contact() {
               rel="noreferrer"
               aria-label="GitHub"
             >
-              <SiGithub className="h-5 w-5 text-[var(--text-muted)] transition-colors hover:text-[#181717]" />
+              <SiGithub className="h-5 w-5 text-[var(--text-muted)] transition-colors hover:text-[#181717] dark:hover:text-[#ffffff]" />
             </a>
 
             <span className="text-sm text-[var(--text-muted)]">·</span>

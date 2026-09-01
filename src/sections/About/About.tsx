@@ -68,7 +68,6 @@ export default function About({
         </motion.div>
 
         {/* Profile Image */}
-        {/* Profile Image */}
         <motion.div
           style={{
             x: imageX,
@@ -111,7 +110,7 @@ export default function About({
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="relative flex h-full w-full items-end justify-center overflow-hidden bg-white"
+              className="relative flex h-full w-full items-end justify-center overflow-hidden bg-[#EDEDEF]"
             >
               {/* Profile Image */}
               <img

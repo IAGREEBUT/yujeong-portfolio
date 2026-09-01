@@ -251,7 +251,7 @@ h4 {
 /* ========================================
      Dark Mode — Not Active Yet
      ======================================== */
-/* 
+
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #a1a1aa;
@@ -297,4 +297,4 @@ h4 {
 
     color-scheme: dark;
   }
-} */
+}

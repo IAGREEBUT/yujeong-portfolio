@@ -93,7 +93,7 @@ export default function Hero({
               rel="noreferrer"
               aria-label="GitHub"
             >
-              <SiGithub className="h-7 w-7 text-[#181717] transition-transform duration-200 hover:scale-110" />
+              <SiGithub className="h-7 w-7 text-[#181717] transition-transform duration-200 hover:scale-110 dark:text-[#ffffff]" />
             </a>
 
             <a

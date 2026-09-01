@@ -96,7 +96,7 @@ export default function Experience() {
                   {/* Company Content */}
                   <div className="flex gap-6 md:pl-2">
                     {/* Company Logo */}
-                    <div className="flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface)]">
+                    <div className="flex h-24 w-24 shrink-0 items-center justify-center overflow-hidden rounded-full border border-[var(--border)] bg-[white]">
                       {experience.logo ? (
                         <img
                           src={experience.logo}
