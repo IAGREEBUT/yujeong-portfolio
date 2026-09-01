@@ -84,7 +84,7 @@ export default function Experience() {
                 {/* Company Row */}
                 <div className="grid grid-cols-1 md:grid-cols-[180px_60px_minmax(0,1fr)]">
                   {/* Period */}
-                  <div className="pt-5 text-xs font-semibold text-[var(--accent)] md:pr-6 md:text-right">
+                  <div className="pt-5 pb-5 text-xs font-semibold text-[var(--accent)] md:pr-6 md:text-right">
                     {experience.period}
                   </div>
 

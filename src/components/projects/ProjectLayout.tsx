@@ -36,7 +36,6 @@ export default function ProjectLayout({
       className="w-full px-10 grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16"
     >
       {/* Project Image */}
-
       <div
         className={
           image.length === 1
@@ -47,11 +46,11 @@ export default function ProjectLayout({
         {image.map((src, index) => (
           <div
             key={src}
-            className={
-              image.length === 1
-                ? "h-full w-full"
-                : "overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)]"
-            }
+            className={`
+        overflow-hidden rounded-2xl border border-[var(--border)] bg-white
+        ${index > 0 ? "hidden md:block" : ""}
+        ${image.length === 1 ? "h-full w-full" : ""}
+      `}
           >
             <img
               src={src}

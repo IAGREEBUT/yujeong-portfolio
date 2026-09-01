@@ -74,7 +74,7 @@ export default function About({
             opacity: imageOpacity,
             scale: imageScale,
           }}
-          className="relative h-[520px] w-[460px] rotate-[-8deg]"
+          className="relative hidden h-[520px] w-[460px] rotate-[-8deg] lg:block"
         >
           {/* Blue Blob */}
           <motion.div

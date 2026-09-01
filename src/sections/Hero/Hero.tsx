@@ -44,7 +44,13 @@ export default function Hero({
             initial={{ y: 24 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl font-bold tracking-[0.1em] text-[var(--text-h)]"
+            className="
+            max-[767px]:!text-[clamp(2.75rem,12vw,4.5rem)]
+            text-5xl
+            font-bold
+            tracking-[0.1em]
+            text-[var(--text-h)]
+          "
           >
             I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 to-sky-400 bg-clip-text text-transparent">
