@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="border-t border-[var(--border-subtle)]">
-      <div className="mx-auto max-w-[var(--container)] px-6 py-1">
+      <div className="mx-auto max-w-[var(--container)] px-6 py-5">
         <div className="flex flex-col gap-8 sm:flex-row sm:items-center sm:justify-between">
           {/* Identity */}
           <div>
@@ -9,7 +9,7 @@ export default function Footer() {
               Yujeong Lee
             </h2>
 
-            <p className="mt-1 text-sm text-[var(--text-muted)]">
+            <p className="text-sm text-[var(--text-muted)]">
               Frontend Developer · React & TypeScript
             </p>
           </div>
@@ -52,16 +52,20 @@ export default function Footer() {
 
           <div className="flex gap-5">
             <a
-              href="#"
+              href="https://github.com/IAGREEBUT"
               target="_blank"
               rel="noreferrer"
+              aria-label="GitHub"
               className="transition-colors hover:text-[var(--accent)]"
             >
               GitHub ↗
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/yujeong-lee-au"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
               className="transition-colors hover:text-[var(--accent)]"
             >
               LinkedIn ↗
