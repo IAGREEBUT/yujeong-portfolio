@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import type { MotionValue } from "framer-motion";
-import { SiGithub } from "react-icons/si";
-import { SlSocialLinkedin } from "react-icons/sl";
+import { SiGithub, SiGmail } from "react-icons/si";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 interface HeroProps {
@@ -88,8 +87,26 @@ export default function Hero({
             transition={{ duration: 0.7, delay: 0.4 }}
             className="mt-2 flex items-center gap-8"
           >
-            <SiGithub className="h-7 w-7 text-[#181717] transition-transform duration-200 hover:scale-110" />
-            <TiSocialLinkedin className="h-7 w-7 text-[#0A66C2] transition-transform duration-200 hover:scale-110" />
+            <a
+              href="https://github.com/IAGREEBUT"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
+              <SiGithub className="h-7 w-7 text-[#181717] transition-transform duration-200 hover:scale-110" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/yujeong-lee-au"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <TiSocialLinkedin className="h-7 w-7 text-[#0A66C2] transition-transform duration-200 hover:scale-110" />
+            </a>
+            <a href="mailto:lyujeong.dev@gmail.com">
+              <SiGmail className="h-7 w-7 text-[#EA4335] transition-transform duration-200 hover:scale-110" />
+            </a>
           </motion.div>
         </motion.div>
       </div>

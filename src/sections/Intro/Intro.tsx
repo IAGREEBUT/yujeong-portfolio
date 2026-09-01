@@ -136,7 +136,10 @@ export default function Intro() {
           </motion.div>
 
           {/* About */}
-          <motion.div className="absolute inset-0 z-10" style={{ x: aboutX }}>
+          <motion.div
+            className="pointer-events-none absolute inset-0 z-10"
+            style={{ x: aboutX }}
+          >
             <About
               imageX={imageX}
               imageScale={imageScale}
