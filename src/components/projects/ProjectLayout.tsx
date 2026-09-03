@@ -12,6 +12,7 @@ interface ProjectLayoutProps {
   image: string[];
   github?: string;
   demo?: string;
+  detail: string | null;
 }
 
 export default function ProjectLayout({
@@ -23,6 +24,7 @@ export default function ProjectLayout({
   image,
   github,
   demo,
+  detail,
 }: ProjectLayoutProps) {
   return (
     <motion.article
@@ -123,7 +125,17 @@ export default function ProjectLayout({
               className="flex items-center gap-2 text-sm font-medium text-[var(--text-h)] transition-colors hover:text-[var(--accent)]"
             >
               <span>Live Demo ↗ </span>
-              {/* <ExternalLink className="h-5 w-5" /> */}
+            </a>
+          )}
+
+          {detail && (
+            <a
+              href={detail}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 text-sm font-medium text-[var(--text-h)] transition-colors hover:text-[var(--accent)]"
+            >
+              <span>Case Study ↗ </span>
             </a>
           )}
         </div>
