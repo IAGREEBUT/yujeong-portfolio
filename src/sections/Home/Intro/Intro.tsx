@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import Hero from "@/sections/Hero/Hero";
-import About from "@/sections/About/About";
+import Hero from "@/sections/Home/Hero/Hero";
+import About from "@/sections/Home/About/About";
 
 export default function Intro() {
   const introRef = useRef<HTMLElement>(null);

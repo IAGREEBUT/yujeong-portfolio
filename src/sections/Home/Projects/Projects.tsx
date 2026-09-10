@@ -6,7 +6,6 @@ import mClass1 from "@/assets/images/projects/m_class_1.jpg";
 import mClass2 from "@/assets/images/projects/m_class_2.jpg";
 import menuTree from "@/assets/images/projects/menu_tree_1.png";
 import videoSearch1 from "@/assets/images/projects/video_search_1.png";
-import videoSearch2 from "@/assets/images/projects/video_search_2.png";
 import tradingPoc1 from "@/assets/images/projects/react_trading_poc_1.png";
 import tradingPoc2 from "@/assets/images/projects/react_trading_poc_2.png";
 
@@ -19,6 +18,7 @@ type Project = {
   image: string[];
   github: string | null;
   demo: string | null;
+  detail: string | null;
 };
 
 const projects = [
@@ -32,10 +32,11 @@ const projects = [
     image: [menuTree],
     github: "https://github.com/IAGREEBUT/mobile-menu-tree-manager.git",
     demo: null,
+    detail: null,
   },
 
   {
-    title: "M-Class - Mock Investment & Financial Education",
+    title: "M-Class : Mock Investment & Financial Education",
     type: "Company",
     visibility: "Public",
     description:
@@ -45,10 +46,11 @@ const projects = [
     image: [mClass1, mClass2],
     github: "https://github.com/orgs/Miraeasset-MobileInternship/repositories",
     demo: null,
+    detail: null,
   },
 
   {
-    title: "React Trading PoC",
+    title: "React Based Trading App PoC",
     type: "Company",
     visibility: "Case Study",
     description:
@@ -57,6 +59,7 @@ const projects = [
     image: [tradingPoc1, tradingPoc2],
     github: null,
     demo: null,
+    detail: "/project-detail/react-poc",
   },
 
   {
@@ -70,6 +73,7 @@ const projects = [
     image: [videoSearch1],
     github: "https://github.com/CrayonTeamJ/docker",
     demo: "https://youtu.be/T5Dj8V5gOyE",
+    detail: null,
   },
 ] satisfies Project[];
 
