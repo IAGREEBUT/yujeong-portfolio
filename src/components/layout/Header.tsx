@@ -3,7 +3,7 @@ export default function Header() {
     <header className="absolute inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-[var(--container)] px-6 py-6">
         <a
-          href="#top"
+          href="/"
           className="
               text-sm
               font-semibold
