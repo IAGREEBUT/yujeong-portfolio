@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Badge from "@/components/common/Badge";
 import { SiGithub } from "react-icons/si";
-// import { Github, ExternalLink } from "lucide-react";
 
 interface ProjectLayoutProps {
   title: string;
@@ -10,8 +9,8 @@ interface ProjectLayoutProps {
   description: string;
   technologies: string[];
   image: string[];
-  github?: string;
-  demo?: string;
+  github: string | null;
+  demo: string | null;
   detail: string | null;
 }
 

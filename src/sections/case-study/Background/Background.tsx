@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
-import { SiFigma, SiAndroid } from "react-icons/si";
+import { SiAndroid } from "react-icons/si";
 import MireaNpay1 from "@/assets/images/captures/mirae_npay_1.jpg";
-import MireaNpay2 from "@/assets/images/captures/mirae_npay_2.jpg";
 import MireaNpay3 from "@/assets/images/captures/mirae_npay_3.jpg";
 import {
-  Bot,
   ArrowRight,
   ArrowRightLeft,
   LayoutGrid,
@@ -12,9 +10,6 @@ import {
   FileCode2,
   LayoutTemplate,
   MousePointer2,
-  Server,
-  Smartphone,
-  Code2,
 } from "lucide-react";
 
 export default function Background() {

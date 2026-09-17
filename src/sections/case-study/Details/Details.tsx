@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import figmaCodeVideo from "@/assets/videos/react-poc/code-connect-demo.MOV";
+import figmaCodeVideo from "@/assets/videos/react-poc/code-connect-demo.mp4";
 import realTimePrice from "@/assets/videos/react-poc/buy.gif";
 import { SiCursor } from "react-icons/si";
 
