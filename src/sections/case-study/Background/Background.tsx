@@ -105,14 +105,14 @@ export default function Background() {
                     </div>
 
                     <div className="flex flex-col gap-3">
-                      <div className="flex items-center gap-3 rounded-xl bg-white/70 px-4 py-3">
+                      <div className="flex items-center gap-3 rounded-xl bg-[var(--bg-muted)] px-4 py-3">
                         <LayoutGrid className="h-4 w-4 shrink-0 text-[var(--text-muted)]" />
                         <span className="text-sm text-[var(--text)]">
                           Native UI Components
                         </span>
                       </div>
 
-                      <div className="flex items-center gap-3 rounded-xl bg-white/70 px-4 py-3">
+                      <div className="flex items-center gap-3 rounded-xl bg-[var(--bg-muted)] px-4 py-3">
                         <Zap className="h-4 w-4 shrink-0 text-[var(--text-muted)]" />
                         <span className="text-sm text-[var(--text)]">
                           Native Functions
@@ -151,14 +151,14 @@ export default function Background() {
                     </div>
 
                     <div className="flex flex-col gap-3">
-                      <div className="flex items-center gap-3 rounded-xl bg-white/70 px-4 py-3">
+                      <div className="flex items-center gap-3 rounded-xl bg-[var(--bg-muted)] px-4 py-3">
                         <LayoutTemplate className="h-4 w-4 shrink-0 text-[var(--text-muted)]" />
                         <span className="text-sm text-[var(--text)]">
                           Screen Layout
                         </span>
                       </div>
 
-                      <div className="flex items-center gap-3 rounded-xl bg-white/70 px-4 py-3">
+                      <div className="flex items-center gap-3 rounded-xl bg-[var(--bg-muted)] px-4 py-3">
                         <MousePointer2 className="h-4 w-4 shrink-0 text-[var(--text-muted)]" />
                         <span className="text-sm text-[var(--text)]">
                           Screen Logic / Event

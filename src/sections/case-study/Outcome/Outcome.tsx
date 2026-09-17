@@ -5,7 +5,6 @@ import AIBefore from "@/assets/videos/react-poc/ai-before.gif";
 import AIAfter from "@/assets/videos/react-poc/ai-after.gif";
 import DesignGuide from "@/assets/images/react-poc/design-guide.png";
 import BuyScreen from "@/assets/videos/react-poc/buy.gif";
-import SellScreen from "@/assets/videos/react-poc/sell.gif";
 import TransactionScreen from "@/assets/videos/react-poc/transactions.gif";
 import MyStockScreen from "@/assets/videos/react-poc/my-stocks.gif";
 

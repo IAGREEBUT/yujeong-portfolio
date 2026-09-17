@@ -425,7 +425,7 @@ export default function Details() {
               {/* Real-time WebSocket Demo */}
               <div className="w-full">
                 {/* GIF */}
-                <div className="w-full overflow-hidden rounded-2xl border border-[var(--border)] bg-black shadow-[0_20px_50px_rgba(15,23,42,0.5)]">
+                <div className="w-full max-w-[350px] overflow-hidden rounded-2xl border border-[var(--border)] bg-black shadow-[0_20px_50px_rgba(15,23,42,0.5)]">
                   <img
                     src={realTimePrice}
                     alt="Real-time market price updates through WebSocket"
