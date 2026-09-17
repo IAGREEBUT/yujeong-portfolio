@@ -293,7 +293,7 @@ export default function Outcome() {
                       </p>
                     </div>
 
-                    <div className="mx-auto w-[80%] max-w-[350px] overflow-hidden rounded-2xl border border-[var(--border-accent)] bg-[var(--bg-muted)]">
+                    <div className="mx-auto w-[80%] max-w-[350px] overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--bg-muted)]">
                       <img
                         src={AICodeAfter}
                         alt="AI-generated code after reusable components"

@@ -186,17 +186,21 @@ export default function Background() {
           </div>
 
           {/* Three Key Challenges */}
+
           <div className="flex w-full max-w-[950px] flex-col items-center gap-15 px-10">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{
                 once: true,
+
                 amount: 0.2,
               }}
               transition={{
                 duration: 0.7,
+
                 delay: 0.1,
+
                 ease: "easeOut",
               }}
               className="pb-2 text-sm font-medium tracking-[0.3em] text-[var(--accent)]"
@@ -205,41 +209,61 @@ export default function Background() {
             </motion.p>
 
             {/* Three Needs Cards */}
+
             <div className="grid w-full max-w-4xl grid-cols-1 gap-8 md:grid-cols-3">
               {/* DESIGN */}
+
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{
                   once: true,
+
                   amount: 0.2,
                 }}
                 transition={{
                   duration: 0.7,
+
                   delay: 0.1,
+
                   ease: "easeOut",
                 }}
                 className="
-        group relative flex aspect-square flex-col items-center justify-center
-        overflow-hidden rounded-full
-        border border-blue-200
-        bg-gradient-to-br from-blue-50 via-white to-sky-50
-        px-10 text-center
-        shadow-[0_20px_60px_rgba(37,99,235,0.08)]
-        transition-all duration-500
-        hover:-translate-y-2
-        hover:shadow-[0_25px_70px_rgba(37,99,235,0.15)]
-      "
+
+      group relative flex aspect-square flex-col items-center justify-center
+
+      overflow-hidden rounded-full
+
+      border border-[var(--border)]
+
+      bg-gradient-to-br from-[var(--bg-muted)] via-[var(--bg)] to-[var(--bg-muted)]
+
+      px-10 text-center
+
+      shadow-[0_20px_60px_rgba(0,0,0,0.06)]
+
+      transition-all duration-500
+
+      hover:-translate-y-2
+
+      hover:border-[var(--border-accent)]
+
+      hover:shadow-[0_25px_70px_rgba(0,0,0,0.1)]
+
+    "
               >
                 {/* Decorative glow */}
-                <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-blue-400/10 blur-2xl transition-all duration-500 group-hover:bg-blue-400/20" />
+
+                <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[var(--accent)]/10 blur-2xl transition-all duration-500 group-hover:bg-[var(--accent)]/20" />
 
                 {/* Step */}
+
                 <span className="absolute top-[18%] text-[10px] font-medium tracking-[0.25em] text-[var(--accent)]">
                   ❶ DESIGN
                 </span>
 
                 {/* Main Concept */}
+
                 <div className="relative mt-4">
                   <h3 className="text-lg font-bold tracking-tight text-[var(--text-h)]">
                     DESIGN → CODE
@@ -247,10 +271,13 @@ export default function Background() {
                 </div>
 
                 {/* Details */}
+
                 <div className="relative mt-6 flex flex-col items-center gap-3 text-xs text-[var(--text-muted)]">
                   <div className="flex items-center gap-2">
                     <span>Figma</span>
+
                     <span className="text-[var(--accent)]">→</span>
+
                     <span>React</span>
                   </div>
 
@@ -261,39 +288,58 @@ export default function Background() {
               </motion.div>
 
               {/* AI DEVELOPMENT */}
+
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{
                   once: true,
+
                   amount: 0.2,
                 }}
                 transition={{
                   duration: 0.7,
+
                   delay: 0.2,
+
                   ease: "easeOut",
                 }}
                 className="
-        group relative flex aspect-square flex-col items-center justify-center
-        overflow-hidden rounded-full
-        border border-blue-200
-        bg-gradient-to-br from-blue-50 via-white to-sky-50
-        px-10 text-center
-        shadow-[0_20px_60px_rgba(37,99,235,0.08)]
-        transition-all duration-500
-        hover:-translate-y-2
-        hover:shadow-[0_25px_70px_rgba(37,99,235,0.15)]
-      "
+
+      group relative flex aspect-square flex-col items-center justify-center
+
+      overflow-hidden rounded-full
+
+      border border-[var(--border)]
+
+      bg-gradient-to-br from-[var(--bg-muted)] via-[var(--bg)] to-[var(--bg-muted)]
+
+      px-10 text-center
+
+      shadow-[0_20px_60px_rgba(0,0,0,0.06)]
+
+      transition-all duration-500
+
+      hover:-translate-y-2
+
+      hover:border-[var(--border-accent)]
+
+      hover:shadow-[0_25px_70px_rgba(0,0,0,0.1)]
+
+    "
               >
                 {/* Decorative glow */}
-                <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-blue-400/10 blur-2xl transition-all duration-500 group-hover:bg-blue-400/20" />
+
+                <div className="absolute -left-10 -top-10 h-32 w-32 rounded-full bg-[var(--accent)]/10 blur-2xl transition-all duration-500 group-hover:bg-[var(--accent)]/20" />
 
                 {/* Step */}
+
                 <span className="absolute top-[18%] text-[10px] font-medium tracking-[0.25em] text-[var(--accent)]">
                   ❷ AI DEVELOPMENT
                 </span>
 
                 {/* Main Concept */}
+
                 <div className="relative mt-4">
                   <h3 className="text-lg font-bold tracking-tight text-[var(--text-h)]">
                     AI-ASSISTED
@@ -301,6 +347,7 @@ export default function Background() {
                 </div>
 
                 {/* Details */}
+
                 <div className="relative mt-6 flex flex-col items-center gap-3 text-xs text-[var(--text-muted)]">
                   <div className="flex items-center gap-2">
                     <span>AI-ready workflow</span>
@@ -313,39 +360,58 @@ export default function Background() {
               </motion.div>
 
               {/* ARCHITECTURE */}
+
               <motion.div
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{
                   once: true,
+
                   amount: 0.2,
                 }}
                 transition={{
                   duration: 0.7,
+
                   delay: 0.3,
+
                   ease: "easeOut",
                 }}
                 className="
-        group relative flex aspect-square flex-col items-center justify-center
-        overflow-hidden rounded-full
-        border border-blue-200
-        bg-gradient-to-br from-blue-50 via-white to-sky-50
-        px-10 text-center
-        shadow-[0_20px_60px_rgba(37,99,235,0.08)]
-        transition-all duration-500
-        hover:-translate-y-2
-        hover:shadow-[0_25px_70px_rgba(37,99,235,0.15)]
-      "
+
+      group relative flex aspect-square flex-col items-center justify-center
+
+      overflow-hidden rounded-full
+
+      border border-[var(--border)]
+
+      bg-gradient-to-br from-[var(--bg-muted)] via-[var(--bg)] to-[var(--bg-muted)]
+
+      px-10 text-center
+
+      shadow-[0_20px_60px_rgba(0,0,0,0.06)]
+
+      transition-all duration-500
+
+      hover:-translate-y-2
+
+      hover:border-[var(--border-accent)]
+
+      hover:shadow-[0_25px_70px_rgba(0,0,0,0.1)]
+
+    "
               >
                 {/* Decorative glow */}
-                <div className="absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-blue-400/10 blur-2xl transition-all duration-500 group-hover:bg-blue-400/20" />
+
+                <div className="absolute -right-10 -bottom-10 h-32 w-32 rounded-full bg-[var(--accent)]/10 blur-2xl transition-all duration-500 group-hover:bg-[var(--accent)]/20" />
 
                 {/* Step */}
+
                 <span className="absolute top-[18%] text-[10px] font-medium tracking-[0.25em] text-[var(--accent)]">
                   ❸ ARCHITECTURE
                 </span>
 
                 {/* Main Concept */}
+
                 <div className="relative mt-4">
                   <h3 className="text-lg font-bold tracking-tight text-[var(--text-h)]">
                     WEB-BASED
@@ -353,10 +419,13 @@ export default function Background() {
                 </div>
 
                 {/* Details */}
+
                 <div className="relative mt-6 flex flex-col items-center gap-3 text-xs text-[var(--text-muted)]">
                   <div className="flex items-center gap-2">
                     <span>Native</span>
+
                     <span className="text-[var(--accent)]">→</span>
+
                     <span>Web</span>
                   </div>
 
