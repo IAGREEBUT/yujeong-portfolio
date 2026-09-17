@@ -31,7 +31,7 @@ const projects = [
     technologies: ["React", "TypeScript", "Redux", "MUI"],
     image: [menuTree],
     github: "https://github.com/IAGREEBUT/mobile-menu-tree-manager.git",
-    demo: null,
+    demo: "https://iagreebut.github.io/mobile-menu-tree-manager/",
     detail: null,
   },
 
